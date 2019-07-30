@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jul 30 08:15:19 2019
+Created on Tue Jul 30 08:15 2019
 
-@author: Yvan
+@author: Icarpio
 """ 
 
 from bs4 import BeautifulSoup
@@ -13,7 +13,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 http = urllib3.PoolManager()
 
 web = http.request('GET','https://elpais.com')
-#Cotiene la web en html
+#Contiene la web en html
 soup = BeautifulSoup(web.data, "lxml")
 #Contiene el titulo de pagina
 titulo = soup.title.text
