@@ -21,7 +21,7 @@ titulo = soup.title.text
 print(soup)
 print(titulo)
 
-#Quitar etiquetas y escribir todas las url en un csv
+#Quitar etiquetas y escribir todas las url en un csv con todos los enlaces de la pagina
 file = csv.writer(open("links.csv","w"))
 file.writerow(["Names","LinkT"])
 
