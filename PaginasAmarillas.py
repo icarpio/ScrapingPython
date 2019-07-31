@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jul 31 10:29:57 2019
+Created on Wed Jul 31 10:29 2019
 
-@author: Yvan
+@author: Icarpio
 """
 
 from selenium import webdriver
