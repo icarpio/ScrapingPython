@@ -1,3 +1,10 @@
+"""
+Created on Fri Oct 18 07:05:14 2019
+
+@author: Icarpio
+"""
+
+
 import speech_recognition as sr
 def main():
     r = sr.Recognizer()
@@ -16,10 +23,9 @@ def main():
             print("Error: " + str(e))
         
         with open("recorderaudio.wav", "wb") as f:
-            try:
-                f.write(audio.get_wav_data)
-            except Exception as e:
-                print("Don't Recorder Nothing....")
+
+                f.write(audio.get_wav_data())
+            
             
             
 if __name__ == "__main__":
